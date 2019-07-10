@@ -15,7 +15,7 @@ end
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
 
 def position_taken(board, index)
-  if(board[index - 1] == "" || board[index - 1] == nil || board[index - 1] == " ")
+  if(board[index] == "" || board[index] == nil || board[index] == " ")
     return false
   else
     return true
@@ -24,4 +24,4 @@ end
 
 board = [" ", " ", " ", " ", "X", " ", " ", " ", " "]
 
-valid_move?(board, 5)
+valid_move?(board, 4)
