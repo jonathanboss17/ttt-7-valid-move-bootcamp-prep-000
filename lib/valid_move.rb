@@ -3,10 +3,10 @@
 def valid_move?(board, index)
   
   if(position_taken(board, index) == false && index < 10)
-    puts "true"
+    #puts "true"
     return true
   else
-    puts "false" 
+    #puts "false" 
     return false
   end
   
